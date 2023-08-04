@@ -1,0 +1,33 @@
+.container-footer{
+  background: #262626;
+  border-top: 1px solid var(--border-color-2, #434343);
+  position: relative;
+  z-index: 101;
+
+    .footer__text{
+      padding: 32px 0;
+      width: 60%;
+
+        p{
+          color: #959494;
+          font-size: $smallFontSize;
+          line-height: 28px;
+
+          @include media(tablet-max) {
+            font-size: 14px;
+          }
+
+          @include media(small_mobile-max) {
+            font-size: 13px;
+          }
+        }
+
+      @include media(tablet-max) {
+        padding: 24px 0;
+      }
+
+      @include media(mobile-max) {
+        width: 100%;
+      }
+    }
+}

@@ -1,0 +1,35 @@
+// adaptive
+@import '_mixins.scss';
+
+//variables
+@import 'variables';
+
+//style text
+@import '_style-text.scss';
+
+// General styles
+@import '_general';
+
+//header
+@import 'parts/header';
+
+//buttons
+@import 'parts/buttons';
+
+//general elements
+@import 'parts/general-elements';
+
+//slick slider
+@import 'parts/slick-slider';
+
+//fonts
+@import 'parts/fonts';
+
+// index
+@import 'page/index';
+
+//footer
+@import 'parts/footer';
+
+
+

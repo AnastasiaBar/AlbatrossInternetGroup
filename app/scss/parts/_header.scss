@@ -1,0 +1,19 @@
+header{
+  padding: 24px 0;
+
+    .block-logo{
+
+        .block-logo__logo{
+          line-height: 0;
+
+            img{
+              max-width: 122px;
+              object-fit: cover;
+
+              @include media(tablet-max) {
+                width: 100px;
+              }
+            }
+        }
+    }
+}

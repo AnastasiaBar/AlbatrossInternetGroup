@@ -1,0 +1,305 @@
+//= parts/header.html
+
+<main>
+
+    <section class="section-title-page">
+        <div class="container">
+                <div class="block">
+                     <div class="block__information">
+                         <p class="block__information--bold">Таро-расклад на отношения поможет в любви</p>
+                     </div>
+                     <div class="block__information">
+                         <p>Не стесняйтесь проявлять свои чувства. Неважно на каком этапе сейчас
+                             находятся отношения. Важно, чтобы они не утратили романтичность
+                             и лёгкость. Чаще говорите приятные слова, устраивайте свидания.</p>
+                     </div>
+                </div>
+        </div>
+    </section>
+
+    <section class="section-video">
+        <div class="container">
+                <div class="container-flex">
+                    <div class="block decor">
+                        <div class="block__person-inf">
+                            <div class="block__person-inf__photo">
+                                <img src="img/photo__people/avatar.png" alt="">
+                            </div>
+
+                            <div class="block__person-inf__inf">
+                                <p class="block__person-inf__inf--bold">Александра Жаккар</p>
+                                <p>Таролог, мастер рейки</p>
+                            </div>
+
+                        </div>
+
+                        <div class="block__person-tagline">
+                            <p>Расклад поможет найти новые отношения или укрепить старые</p>
+                        </div>
+
+                        <div class="block__video-inf">
+                            <p>Длительность видео —</p>
+                            <p><span></span></p>
+                        </div>
+                    </div>
+
+                    <div class="block video">
+
+                        <div class="block__video">
+                            <video controls>
+                                <source src="video/video.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+
+                </div>
+        </div>
+    </section>
+
+    <section class="section-audio">
+        <div class="container">
+            <div class="block">
+                    <div class="block__section-title">
+                        <p>Аудиопрогноз эксперта на неделю</p>
+                    </div>
+
+                    <div class="container-tabs">
+
+                        <div class="block-tabs">
+                            <div onclick="activeTab(this, '1')" class="block-tabs__tab active">
+                                <div class="block-tabs__tab__icon">
+                                    <img src="img/icons/1.svg" alt="">
+                                </div>
+                                <p>овен</p>
+                            </div>
+
+                            <div onclick="activeTab(this, '2')" class="block-tabs__tab">
+                                <div class="block-tabs__tab__icon">
+                                    <img src="img/icons/2.svg" alt="">
+                                </div>
+                                <p>телец</p>
+                            </div>
+
+                            <div onclick="activeTab(this, '3')" class="block-tabs__tab">
+                                <div class="block-tabs__tab__icon">
+                                    <img src="img/icons/3.svg" alt="">
+                                </div>
+                                <p>близн.</p>
+                            </div>
+
+                            <div onclick="activeTab(this, '4')" class="block-tabs__tab">
+                                <div class="block-tabs__tab__icon">
+                                    <img src="img/icons/4.svg" alt="">
+                                </div>
+                                <p>рак</p>
+                            </div>
+
+                            <div onclick="activeTab(this, '5')" class="block-tabs__tab">
+                                <div class="block-tabs__tab__icon">
+                                    <img src="img/icons/5.svg" alt="">
+                                </div>
+                                <p>лев</p>
+                            </div>
+
+                            <div onclick="activeTab(this, '6')" class="block-tabs__tab">
+                                <div class="block-tabs__tab__icon">
+                                    <img src="img/icons/6.svg" alt="">
+                                </div>
+                                <p>дева</p>
+                            </div>
+
+                            <div onclick="activeTab(this, '7')" class="block-tabs__tab">
+                                <div class="block-tabs__tab__icon">
+                                    <img src="img/icons/7.svg" alt="">
+                                </div>
+                                <p>весы</p>
+                            </div>
+
+                            <div onclick="activeTab(this, '8')" class="block-tabs__tab">
+                                <div class="block-tabs__tab__icon">
+                                    <img src="img/icons/8.svg" alt="">
+                                </div>
+                                <p>скорп.</p>
+                            </div>
+
+                            <div onclick="activeTab(this, '9')" class="block-tabs__tab">
+                                <div class="block-tabs__tab__icon">
+                                    <img src="img/icons/9.svg" alt="">
+                                </div>
+                                <p>стрелец</p>
+                            </div>
+
+                            <div onclick="activeTab(this, '10')" class="block-tabs__tab">
+                                <div class="block-tabs__tab__icon">
+                                    <img src="img/icons/10.svg" alt="">
+                                </div>
+                                <p>козерог</p>
+                            </div>
+
+                            <div onclick="activeTab(this, '11')" class="block-tabs__tab">
+                                <div class="block-tabs__tab__icon">
+                                    <img src="img/icons/11.svg" alt="">
+                                </div>
+                                <p>водол.</p>
+                            </div>
+
+                            <div onclick="activeTab(this, '12')" class="block-tabs__tab">
+                                <div class="block-tabs__tab__icon">
+                                    <img src="img/icons/12.svg" alt="">
+                                </div>
+                                <p>рыбы</p>
+                            </div>
+                        </div>
+
+                        <div class="container-audio">
+                            <div class="audio">
+                                <audio id="myAudio" controls>
+                                    <source src='audio/1.mp3' type="audio/mpeg">
+                                </audio>
+                            </div>
+
+                            <div class="container-btn">
+                                <p>Наши эксперты составят индивидуальный прогноз</p>
+
+                                <div class="button-link blue">
+                                    <a class="blue btn">Хочу прогноз</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <section  class="section-reviews">
+        <div class="container">
+            <div class="block-title">
+                <p>Отзывы пользователей</p>
+            </div>
+        </div>
+        <div class="slider-reviews">
+            <div class="slider-reviews__slider">
+                <div>
+                    <div class="item1 slider_card slider-reviews__slider__card">
+                        <p>Консультация очень понравилась.
+                            Эксперт быстро и подробно все просмотрела. Предложила для полной картины смотреть
+                            и по астрологии и по нумерологии. Понравилось что не было каких то общих
+                            фраз, а одна конкретика </p>
+
+                        <div class="slider-footer">
+                            <div class="slider-footer__inf">
+                                <p>Александра, 28 лет</p>
+                            </div>
+
+                            <div class="slider-footer__photo">
+                                <div class="photo">
+                                    <img src="img/photo__people/pic-2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div>
+                    <div class="item2 slider_card slider-reviews__slider__card">
+                        <p>Моя дорогая Алевтина! Какая же Вы классная! Как же вы мне помогаете на моем жизненном пути!
+                            Вы читаете людей, как открытую книгу, помогая нам понять чувства, эмоции и действия людей! </p>
+
+                        <div class="slider-footer">
+                            <div class="slider-footer__inf">
+                                <p>Евгения, 21 год</p>
+                            </div>
+
+                            <div class="slider-footer__photo">
+                                <div class="photo">
+                                    <img src="img/photo__people/pic-3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div>
+                    <div class="item3 slider_card slider-reviews__slider__card">
+                        <p>Очень комфортная обстановка в диалоге, большой спектр детальных раскладов, хорошие
+                            попадания. В зависимости от своих вопросов вы можете выбрать вариант просмотра с
+                            экспертом, консультацией осталась довольна!</p>
+
+                        <div class="slider-footer">
+                            <div class="slider-footer__inf">
+                                <p>Людмила, 38 лет</p>
+                            </div>
+
+                            <div class="slider-footer__photo">
+                                <div class="photo">
+                                    <img src="img/photo__people/pic-4.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div>
+                    <div class="item4 slider_card slider-reviews__slider__card">
+                        <p>Прямо вау-вау! Увидела много деталей сама, без подсказок. Подробно описывала вопросы,
+                            касаемо отношений, дружбы, работы, финансов. Очень понравилась! Рекомендовала бы ее многим! </p>
+
+                        <div class="slider-footer">
+                            <div class="slider-footer__inf">
+                                <p>Зинаида, 31 год</p>
+                            </div>
+
+                            <div class="slider-footer__photo">
+                                <div class="photo">
+                                    <img src="img/photo__people/pic.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div>
+                    <div class="item5 slider_card slider-reviews__slider__card">
+                        <p>Приятное впечатление осталось после консультации. Точно, быстро и без воды. Отвечает на
+                            четко поставленный вопрос. Чем чётче этот вопрос, тем круче ответ. Вернусь ещё однозначно,
+                            за 15 минут консультации получила ответы на все. </p>
+
+                        <div class="slider-footer">
+                            <div class="slider-footer__inf">
+                                <p>Анна, 38 лет</p>
+                            </div>
+
+                            <div class="slider-footer__photo">
+                                <div class="photo">
+                                    <img src="img/photo__people/pic-2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="container-arrow">
+                    <ul>
+                        <li class="prev">
+                            <button class="slick-prev slick-arrow" aria-label="Previous" type="button">
+                                <img   src="img/icons/arrow.svg" alt="">
+                            </button>
+                        </li>
+                        <li class="next">
+                            <button class="slick-next slick-arrow" aria-label="Next" type="button">
+                                <img   src="img/icons/arrow.svg" alt="">
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+    </section>
+
+</main>
+
+//= parts/footer.html
+

@@ -1,0 +1,35 @@
+.button-link {
+  display: inline-flex;
+  box-sizing: border-box;
+  border-radius: 60px;
+  align-items: center;
+
+  a, button {
+    padding: 0 24px;
+    font-weight: 500;
+    font-size: 19px;
+    white-space: nowrap;
+    color: $white;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    @include media(tablet-max) {
+      font-size: 16px;
+    }
+
+    @include media(small_mobile-max) {
+      font-size: 19px;
+    }
+  }
+
+  &.blue{
+    background: $gradient-blue;
+
+    &:hover{
+      background: $blue;
+    }
+  }
+}

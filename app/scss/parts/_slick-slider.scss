@@ -1,0 +1,138 @@
+.slick-slide {
+  margin: 0 20px;
+  outline: 0;
+
+  @include media(small_mobile-max) {
+    margin: 0 8px;
+  }
+}
+
+
+.slick-dots{
+  position: absolute;
+  display: block;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, 0%);
+
+    li{
+      position: relative;
+      display: inline-block;
+      margin: 0 20px;
+      padding: 0;
+
+        &.slick-active{
+
+          button{
+
+            &:before{
+              background: $white;
+            }
+          }
+        }
+
+        button{
+          font-size: 0;
+          line-height: 0;
+          display: block;
+          padding: 5px;
+          color: transparent;
+          border: 0;
+          background: 0 0;
+
+          &:before{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 8px;
+            height: 8px;
+            content: "";
+            text-align: center;
+            border-radius: 50%;
+            background: #959494;
+            cursor: pointer;
+          }
+        }
+
+      @include media(small_mobile-max) {
+        margin: 0 10px;
+      }
+    }
+
+  @include media(mobile-max) {
+    bottom: -45px;
+  }
+}
+
+
+.container-arrow{
+  width: 100%;
+
+    ul{
+      display: inline-flex;
+      position: relative;
+      width: 100%;
+
+        .prev, .next{
+          width: fit-content;
+          position: absolute;
+          bottom: -60px;
+
+            button{
+              cursor: pointer;
+              background: none;
+              border: none;
+              line-height: 0;
+
+                img{
+
+                  @include media(tablet-max) {
+                    width: 30px;
+                  }
+                }
+            }
+        }
+
+        .prev{
+          left: calc(50% - 43px - 125px - 56px);
+
+            button{
+
+              img{
+                transform: rotate(180deg);
+              }
+            }
+
+          @include media(tablet-max) {
+            left: calc(50% - 30px - 125px - 56px);
+          }
+        }
+
+        .next{
+          right: calc(50% - 43px - 125px - 56px);
+
+            button{
+
+              img{
+                  transform: rotate(0deg);
+              }
+            }
+
+          @include media(tablet-max) {
+            right: calc(50% - 30px - 125px - 56px);
+          }
+        }
+    }
+
+  @include media(mobile-max) {
+    display: none;
+  }
+}
+
+.slick-disabled{
+  display: none !important;
+}
